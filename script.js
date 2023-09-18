@@ -1,4 +1,4 @@
-let timer = 60;
+let timer = 6;
 let score = 0;
 let hitnmbr = 0;
 let makebubble = ()=>{
@@ -14,6 +14,13 @@ let increaseScore = ()=>{
     document.querySelector("#scre").textContent = score;
 }
 
+let restart = ()=>{
+    makebubble();
+    if(timer === 0)(
+        timer = 60 
+        );
+}
+
 let runtimer = ()=>{
      setInterval(() => {
         if(timer  > 0){
@@ -21,11 +28,14 @@ let runtimer = ()=>{
             document.querySelector("#timeline").innerHTML = timer;
         } else {
             clearInterval(timer)
-            let timeout = `<div id="gameover"><h1>Game Over</h1><h1>Score:${score}</h1></div>`;
-            document.querySelector("#lowerperent").innerHTML = timeout
+            let timeout = `<div id="gameover"><h1>Game Over</h1><h1>Score:${score}</h1><button onclick="restart()">START</button></div>`;
+            document.querySelector("#lowerperent").innerHTML = timeout  
         }
     },1000)
 }
+
+
+
 let numberhint = ()=>{
     hitnmbr = Math.floor(Math.random()*10)
    document.querySelector("#hint").textContent = hitnmbr
