@@ -3,7 +3,7 @@ let score = 0;
 let hitnmbr = 0;
 let makebubble = ()=>{
     let bubble = ""; 
-    for (let i = 0; i < 161; i++) {
+    for (let i = 0; i < 261; i++) {
         bubble += `<div id="blu">${Math.floor(Math.random() * 10)}</div>`;
     }
     document.querySelector("#lowerperent").innerHTML = bubble;
