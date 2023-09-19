@@ -17,8 +17,9 @@ let increaseScore = ()=>{
 let restart = ()=>{
     makebubble();
     if(timer === 0)(
-        timer = 60 
-        );
+        timer = 60 ,
+        score = 0
+        )
 }
 
 let runtimer = ()=>{
