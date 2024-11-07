@@ -1,5 +1,5 @@
 let timer = 60;
-let score = 0;
+let score = 480;
 let hitnmbr = 0;
 let makebubble = ()=>{
     let bubble = ""; 
