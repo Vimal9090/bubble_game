@@ -10,7 +10,7 @@ let makebubble = ()=>{
 }
 
 let increaseScore = ()=>{
-    score += 480;
+    score += 10;
     document.querySelector("#scre").textContent = score;
 }
 
