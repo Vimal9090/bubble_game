@@ -1,5 +1,5 @@
 let timer = 60;
-let score = 480;
+let score = 0;
 let hitnmbr = 0;
 let makebubble = ()=>{
     let bubble = ""; 
@@ -10,7 +10,7 @@ let makebubble = ()=>{
 }
 
 let increaseScore = ()=>{
-    score += 10;
+    score += 480;
     document.querySelector("#scre").textContent = score;
 }
 
